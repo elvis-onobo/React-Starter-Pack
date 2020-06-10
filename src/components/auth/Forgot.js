@@ -2,14 +2,13 @@ import React from 'react'
 
 function Forgot() {
 	return (
-		<form>
+		<div>
 			<p>Reset Password</p>
-			<label>
-				Email
-				<input type="email" name="email" placeholder="Enter your account e-mail" />
-			</label>
-			<button>Send Password Reset Link</button>
-		</form>
+			<form className="col-md-6 row">
+				<input type="email" name="email" className="form-control rounded-0 col-md-8" placeholder="Enter your account e-mail" />
+				<button className="btn btn-primary rounded-0 col-md-4">Send Password Reset Link</button>
+			</form>
+		</div>
 	)
 }
 
