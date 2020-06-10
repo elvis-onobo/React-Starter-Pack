@@ -3,19 +3,21 @@ import React from 'react'
 function Login() {
 	return (
 		<div>
-			<form method="post" action="">
+			<form className="col-md-6">
 				<p>Login</p>
-				<label>
-					Login
-					<input type="text" name="email" placeholder="email" />
-				</label>
-				<br />
-				<label>
-					Password
-					<input type="password" name="password" placeholder="password" />
-				</label>
-				<br />
-				<button class="btn btn-primary rounded-0">Login</button>
+				<div className="form-group">
+					<label for="exampleInputPassword1">Email address</label>
+					<input type="email" className="form-control rounded-0" id="exampleInputPassword1" />
+				</div>
+				<div className="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" className="form-control rounded-0" id="exampleInputPassword1" />
+				</div>
+				<div className="form-group form-check">
+					<input type="checkbox" className="form-check-input" id="exampleCheck1" />
+					<label className="form-check-label" for="exampleCheck1">Remember me</label>
+				</div>
+				<button type="submit" className="btn btn-primary">Login</button>
 			</form>
 		</div>
 	)
