@@ -4,7 +4,7 @@ function Footer() {
 	const date = new Date()
 
 	return (
-		<div className="card-footer text-muted">
+		<div className="card-footer text-muted text-center">
 			<div>&copy; {date.getFullYear()}, Elvis Onobo</div>
 		</div>
 	)
